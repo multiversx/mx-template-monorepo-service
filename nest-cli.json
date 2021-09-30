@@ -1,0 +1,48 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/nestjs-monorepo-template/src",
+  "projects": {
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "nestjs-monorepo-template": {
+      "type": "application",
+      "root": "apps/nestjs-monorepo-template",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-monorepo-template/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-monorepo-template/tsconfig.app.json"
+      }
+    },
+    "microservice": {
+      "type": "application",
+      "root": "apps/microservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/microservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/microservice/tsconfig.app.json"
+      }
+    },
+    "example": {
+      "type": "library",
+      "root": "libs/example",
+      "entryFile": "index",
+      "sourceRoot": "libs/example/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/example/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "apps/nestjs-monorepo-template/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/nestjs-monorepo-template"
+}

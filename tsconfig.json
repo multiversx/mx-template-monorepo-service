@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "strictBindCallApply": false,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "typeRoots": [
+      "src/@types",
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@template/core": [
+        "libs/core/src"
+      ],
+      "@template/core/*": [
+        "libs/core/src/*"
+      ],
+      "@template/example": [
+        "libs/example/src"
+      ],
+      "@template/example/*": [
+        "libs/example/src/*"
+      ]
+    }
+  }
+}
