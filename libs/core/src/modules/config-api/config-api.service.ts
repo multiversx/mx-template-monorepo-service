@@ -14,7 +14,7 @@ export class ConfigApiService {
   }
 
   getElrondApiUrl(): string {
-    const apiUrl = this.configService.get<string>('urls.elrondApi');
+    const apiUrl = this.configService.get<string>('urls.mxApi');
     if (!apiUrl) {
       throw new Error('No API url present');
     }

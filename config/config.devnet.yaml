@@ -1,11 +1,11 @@
 env: devnet
 urls:
-  elrondApi: 'https://devnet-api.elrond.com/'
+  mxApi: 'https://devnet-api.multiversx.com/'
   swagger:
     - 'http://localhost:3000/'
-    - 'https://devnet-microservice.elrond.com'
-    - 'https://testnet-microservice.elrond.com'
-    - 'https://microservice.elrond.com'
+    - 'https://devnet-microservice.multiversx.com'
+    - 'https://testnet-microservice.multiversx.com'
+    - 'https://microservice.multiversx.com'
   redis: '127.0.0.1'
   rabbitMqUrl: 'amqp://localhost:5672'
 security:

@@ -1,8 +1,8 @@
 
 <div style="text-align:center">
   <img
-  src="https://raw.githubusercontent.com/ElrondNetwork/elrond-go/master/elrond_logo_01.svg"
-  alt="Elrond Network">
+  src="https://github.com/multiversx/mx-chain-go/blob/master/multiversx-logo.svg"
+  alt="MultiversX">
 </div>
 
 ## Description
