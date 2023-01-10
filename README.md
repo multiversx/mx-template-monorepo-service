@@ -1,8 +1,7 @@
-
 <div style="text-align:center">
   <img
-  src="https://raw.githubusercontent.com/ElrondNetwork/elrond-go/master/elrond_logo_01.svg"
-  alt="Elrond Network">
+  src="https://raw.githubusercontent.com/multiversx/mx-chain-go/master/multiversx-logo.svg"
+  alt="MultiversX">
 </div>
 
 ## Description
@@ -29,6 +28,7 @@ $ npm run start:mainnet
 ```
 
 ## Running second microservice
+
 ```bash
 # development
 $ npm run start:microservice:devnet

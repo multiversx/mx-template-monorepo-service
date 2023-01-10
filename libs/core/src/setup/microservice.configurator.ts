@@ -67,10 +67,10 @@ export class MicroserviceConfigurator {
     );
 
     let documentBuilder = new DocumentBuilder()
-      .setTitle('Elrond Microservice API')
+      .setTitle('MultiversX Microservice API')
       .setDescription(description)
       .setVersion('1.0.0')
-      .setExternalDoc('Elrond Docs', 'https://docs.elrond.com');
+      .setExternalDoc('MultiversX Docs', 'https://docs.multiversx.com');
 
     const apiUrls = configApiService.getSwaggerUrls();
     for (const apiUrl of apiUrls) {
