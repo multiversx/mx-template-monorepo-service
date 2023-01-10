@@ -1,7 +1,6 @@
-
 <div style="text-align:center">
   <img
-  src="https://github.com/multiversx/mx-chain-go/blob/master/multiversx-logo.svg"
+  src="https://raw.githubusercontent.com/multiversx/mx-chain-go/master/multiversx-logo.svg"
   alt="MultiversX">
 </div>
 
@@ -29,6 +28,7 @@ $ npm run start:mainnet
 ```
 
 ## Running second microservice
+
 ```bash
 # development
 $ npm run start:microservice:devnet
