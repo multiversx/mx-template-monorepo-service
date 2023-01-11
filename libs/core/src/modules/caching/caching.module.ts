@@ -1,10 +1,10 @@
 import { CacheModule, Module } from '@nestjs/common';
 import { ConfigApiModule } from '../config-api';
-import { ElrondApiModule } from '../elrond-api';
+import { MultiversXApiModule } from '../multiversx-api';
 import { CachingService } from './caching.service';
 
 @Module({
-  imports: [CacheModule.register(), ConfigApiModule, ElrondApiModule],
+  imports: [CacheModule.register(), ConfigApiModule, MultiversXApiModule],
   providers: [CachingService],
   exports: [CachingService],
 })

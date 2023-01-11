@@ -5,7 +5,7 @@ import { PerformanceProfiler } from '../../utils/performance.profiler';
 import { ConfigApiService } from '../config-api';
 
 @Injectable()
-export class ElrondApiService {
+export class MultiversXApiService {
   private readonly logger: Logger;
   private readonly baseUrl: string;
 
@@ -13,8 +13,8 @@ export class ElrondApiService {
     private readonly configApiService: ConfigApiService,
     private readonly metricsService: MetricsService,
   ) {
-    this.baseUrl = this.configApiService.getElrondApiUrl();
-    this.logger = new Logger(ElrondApiService.name);
+    this.baseUrl = this.configApiService.getMultiversXApiUrl();
+    this.logger = new Logger(MultiversXApiService.name);
   }
 
   async get(url: string): Promise<any> {

@@ -13,7 +13,7 @@ export class ConfigApiService {
     return env;
   }
 
-  getElrondApiUrl(): string {
+  getMultiversXApiUrl(): string {
     const apiUrl = this.configService.get<string>('urls.mxApi');
     if (!apiUrl) {
       throw new Error('No API url present');

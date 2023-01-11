@@ -4,7 +4,7 @@ import { createClient } from 'redis';
 import { Cache } from 'cache-manager';
 import { ConfigApiService } from '../config-api';
 import { Constants } from '../../utils';
-import { ElrondApiService } from '../elrond-api';
+import { MultiversXApiService } from '../multiversx-api';
 
 @Injectable()
 export class CachingService {
@@ -23,7 +23,7 @@ export class CachingService {
 
   constructor(
     @Inject(CACHE_MANAGER) private readonly cache: Cache,
-    private readonly elrondApiService: ElrondApiService,
+    private readonly multiversXApiService: MultiversXApiService,
     private readonly configApiService: ConfigApiService,
   ) {
     CachingService.cache = this.cache;
@@ -168,7 +168,7 @@ export class CachingService {
 
   private async getGenesisTimestampRaw(): Promise<number> {
     try {
-      const round = await this.elrondApiService.get('rounds/0/1');
+      const round = await this.multiversXApiService.get('rounds/0/1');
       console.log('ROUND', round);
       return round.timestamp;
     } catch (error) {
